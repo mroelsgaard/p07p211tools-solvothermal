@@ -327,7 +327,7 @@ if __name__ == "__main__":
             # build string for log_file
             s = ''
             for val in [exp.fileidx, count01, count07, fname, 
-                        pressure, temp_ctrl, temp_sample]:
+                        pressure, temp_ctrl, temp_sample, t1]:
                 s += f'{val}\t'
             #exp.sprint(f't after string build: {time.perf_counter()-t0}') 
             exp.write_log(s) 
