@@ -1,0 +1,10 @@
+csh
+atten 30
+
+mo/abs/mult=(x2dt=0,ydt=1400,tthan=0)
+mva tth 0
+mva xan 70
+mvr xdt 113.84
+mva xbs 15
+
+

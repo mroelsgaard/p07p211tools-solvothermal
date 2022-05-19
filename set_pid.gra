@@ -1,0 +1,26 @@
+! script that sets PID parameters on a Lakeshore 336
+! MartinR 19.05.2022
+
+if (interrupt_scan) 
+    say/exp_log "set_temp: Interrupt_scan is set"
+    goto finish_set_temp
+endif
+
+
+narg = n_arg()
+if(narg<3)
+say/exp_log "Three arguments needed... Usage: set_pid.gra P I D"
+endif
+
+
+gpib_channel="gpib_ch3"
+ls_channel="C"
+loop_channel="3"
+
+arg_set_p=arg(1)
+arg_set_i=arg(2)
+arg_set_d=arg(3)
+str_to_send = "PID "loop_channel", "arg_set_p","arg_set_i","arg_set_d""
+!str_to_send = "PID "loop_channel"  ,3,1,0"
+say "P "arg_set_p" I "arg_set_i" D "arg_set_d""
+response=tng_inoutStringVoid(gpib_channel,GPIBWrite,str_to_send)

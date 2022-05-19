@@ -1,0 +1,97 @@
+stop_liveview
+atten 0
+
+! nominal detector-to-sample distance of 320 mm
+r pos11
+atten 0
+osh
+grawait 1
+run take_pilatus.py calibration LaB6_1p5mm_nominal320_10s_atten0_pos11 10
+grawait 12; csh
+
+r pos12
+atten 0
+osh
+grawait 1
+run take_pilatus.py calibration LaB6_1p5mm_nominal320_10s_atten0_pos12 10
+grawait 12; csh
+
+r pos13
+atten 0
+osh
+grawait 1
+run take_pilatus.py calibration LaB6_1p5mm_nominal320_10s_atten0_pos13 10
+grawait 12; csh
+
+
+
+
+r pos21
+atten 0
+osh
+grawait 1
+run take_pilatus.py calibration LaB6_1p5mm_nominal320_10s_atten0_pos21 10
+grawait 12; csh
+
+r pos22
+atten 0
+osh
+grawait 1
+run take_pilatus.py calibration LaB6_1p5mm_nominal320_10s_atten0_pos22 10
+grawait 12; csh
+
+r pos23
+atten 0
+osh
+grawait 1
+run take_pilatus.py calibration LaB6_1p5mm_nominal320_10s_atten0_pos23 10
+grawait 12; csh
+
+
+
+r pos31
+atten 0
+osh
+grawait 1
+run take_pilatus.py calibration LaB6_1p5mm_nominal320_10s_atten0_pos31 10
+grawait 12; csh
+
+r pos32
+atten 0
+osh
+grawait 1
+run take_pilatus.py calibration LaB6_1p5mm_nominal320_10s_atten0_pos32 10
+grawait 12; csh
+
+r pos33
+atten 0
+osh
+grawait 1
+run take_pilatus.py calibration LaB6_1p5mm_nominal320_10s_atten0_pos33 10
+grawait 12; csh
+
+
+
+r pos41
+atten 0
+osh
+grawait 1
+run take_pilatus.py calibration LaB6_1p5mm_nominal320_10s_atten0_pos41 10
+grawait 12; csh
+
+r pos42
+atten 0
+osh
+grawait 1
+run take_pilatus.py calibration LaB6_1p5mm_nominal320_10s_atten0_pos42 10
+grawait 12; csh
+
+r pos43
+atten 0
+osh
+grawait 1
+run take_pilatus.py calibration LaB6_1p5mm_nominal320_10s_atten0_pos43 10
+grawait 12; csh
+
+start_liveview
+

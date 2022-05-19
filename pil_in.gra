@@ -1,0 +1,11 @@
+mva xbs 0
+mva ybs 0
+mva zbs 0
+atten 30
+csh
+
+mva pilatus_sample 700
+!mva pilatus_sample 400
+
+
+
